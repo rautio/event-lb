@@ -1,0 +1,15 @@
+{
+  "name": "event-lb-backend",
+  "version": "1.0.0",
+  "description": "Backend for the event-lb application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "event",
+    "leaderboard"
+  ],
+  "author": "Oskari Rautiainen",
+  "license": "MIT"
+}
