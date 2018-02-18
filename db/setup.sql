@@ -6,8 +6,10 @@ CREATE TABLE user (
     id INT NOT NULL AUTO_INCREMENT,
     username VARCHAR(254) NOT NULL,
     email VARCHAR(254) NOT NULL,
-    salt CHAR(64),
-    hash CHAR(254),
+    first_name VARCHAR(254) NOT NULL,
+    last_name VARCHAR(254) NOT NULL,
+    salt VARCHAR(89) NOT NULL,
+    hash VARCHAR(172) NOT NULL,
     PRIMARY KEY(id)
 );
 
@@ -34,7 +36,8 @@ CREATE TABLE meeting (
 
 CREATE TABLE attendee (
     id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(254) NOT NULL,
+    first_name VARCHAR(254) NOT NULL,
+    last_name VARCHAR(254) NOT NULL,
     email VARCHAR(254) NOT NULL,
     meeting_id INT NOT NULL,
     team_id INT NOT NULL,
