@@ -1,0 +1,17 @@
+@import '_colors.scss';
+
+@media screen and (min-width:600px){
+
+    $theme-font:    verdana, sans-serif;
+    
+    body {
+      font: $theme-font;
+    }
+    
+    .navbar {
+        background-color: $toronto;
+        color: 'pink';
+    }
+    
+
+}
